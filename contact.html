@@ -1,0 +1,73 @@
+<html>
+
+
+<style>
+
+body {
+  color: #7E354D; font-family: Arial, Veranda, sans-serif; margin-top:200px; text-align: center; background-image: url(bg-pink.jpg);
+    background-size:cover
+}
+
+
+</style>
+
+<body>
+<h1>Contact Me</h1>
+
+<br><p>Your Full Name</p>
+<br><input id = "name"></input><br>
+
+<p>Your Email</p>
+<br><input id = "email"></input><br>
+
+<p>Your Message</p>
+<br><input id = "message"></input><br>
+
+<br><br><button onClick = myFunction()>submit</button>
+<p id = "show"></p>
+
+</body>
+</html>
+<script>
+	
+function myFunction(){
+
+var m = document.getElementById("name").value;
+var n = document.getElementById("email").value;
+var o = document.getElementById("message").value;
+
+// alert(m);
+if (m == ""){
+	alert("Please insert Full Name");
+}	
+else if (n == ""){
+	alert("Please insert your Email address")
+}
+else if (o == ""){
+	alert("Please insert your message")
+}else {//document.getElementById("show").innerHTML=("Hi " + m + ", thank you for your note - I will respond as soon as I receive this message. Cheers!");
+window.open("landingpage.html");
+}
+
+
+}
+
+
+
+
+
+/*var m;
+function myFunction(){
+    // alert(m);
+      m = Number(document.getElementById('demo').value);
+      // alert(m);
+      if (m == " "){
+          alert("you didn't put anything")
+      } else {
+          alert(" you inserted "+ m)
+      }
+}*/
+</script>
+
+
+
